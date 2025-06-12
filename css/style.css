@@ -203,7 +203,9 @@ picture:has(~ .cart__counter.active) {
   text-align: center;
   color: var(--rose-500);
 }
-
+.basket__empty svg {
+  margin: 0 auto;
+}
 .cart__buy:has(.cart__bought > .cart__bought-full) + .basket__empty {
   display: none;
 }
