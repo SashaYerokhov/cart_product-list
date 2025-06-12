@@ -391,13 +391,13 @@ picture:has(~ .cart__counter.active) {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 @media (max-width: 1000px) {
   .product__cart {
     padding: 100px 20px;
   }
   .product__cart-wrapper {
     display: block;
+    margin: 0 auto;
   }
   .product__cart-block picture img {
     height: auto;
@@ -409,11 +409,13 @@ picture:has(~ .cart__counter.active) {
   }
   .product__cart-item {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .product__cart-item {
     grid-template-columns: 325px;
+    margin: 0 auto;
   }
   .product__list-basket {
     width: 325px;
@@ -426,12 +428,11 @@ picture:has(~ .cart__counter.active) {
   .basket__carbon-neutral {
     width: 275px;
   }
- .cart__buy .cart__buy-btn,
- .clear-cart {
+  .cart__buy .cart__buy-btn,
+  .clear-cart {
     width: 275px;
   }
 }
-
 .attribution {
   font-size: 11px;
   text-align: center;
